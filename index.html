@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lunatori's Wiki</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Lunatori Project's Wiki">
+        <meta name="keywords" content="Lunatori">
+        <meta name="author" content="Farrer Thomson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/Logo, Squared.png">
+    </head>
+    <body>
+        <!--storage-->    
+        <img class="picture" id="fileLogo" src="images/Logo.png" alt="logo">
+        <img class="picture" id="fileDead" src="images/Dead.png" alt="Dead">
+        <p class="story" id="fileEPro"></p>
+        <audio id="audio"></audio>
+        <!--method-->
+        <div id="yameteIndrico"></div>
+        <div id="fileCross"></div>
+        <!--Icon-->
+        <table>
+            <tr>
+                <th class="icon" id="logoId" onclick="showFile('fileLogo')">
+                    <img src="images/jpg file.png" alt="logo">
+                    <p>logo</p>
+                </th>
+                <th class="icon" id="deadId" onclick="showFile('fileDead')">
+                    <img src="images/jpg file.png" alt="Dead">
+                    <p>Dead</p>
+                </th>
+                <th class="icon" onclick="showFile('fileEPro')">
+                    <img src="images/sty file.png" alt="Legna's Adventure">
+                    <p>EPro</p>
+                </th>
+                <th class="icon" onclick="play('music/tune and melody.mp3')">
+                    <img src="images/mp3 file.png" alt="Ronim Jam">
+                    <p>Tune&Melody</p>
+                </th>
+            <tr>
+        </table>
+        <!--Music Player-->
+        <div id="musicP">
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div id="musicPheader">LUNAPLAYER</div>
+            <div class="alignIn">
+                <div id="playBut"></div>
+            </div>
+            <div class="alignIn">
+                <div id="pauseBut"></div>
+            </div>
+            <div class="alignIn">
+                <div id="closeBut"></div>
+            </div>
+        </div>
+        <!--Bottombar-->
+        <div class="bott">
+            <p id="t1" title="Owner of the desktop">Lunatori Desktop</p>
+            <div class="button" id="btn1" style="vertical-align:middle" onclick="creditS()">
+                <span>♟</span>
+            </div>
+            <div class="button" id="btn2" style="vertical-align:middle" onclick="musicS()">
+                <span>♜</span>
+            </div>
+            <div class="button" id="btn3" style="vertical-align:middle" onclick="artS()">
+                <span>♞</span>
+            </div>
+            <div class="button" id="btn4" style="vertical-align:middle" onclick="languageS()">
+                <span>♝</span>
+            </div>
+            <div class="button" id="btn5" style="vertical-align:middle" onclick="storyS()">
+                <span>♛</span>
+            </div>
+            <div class="button" id="btn6" style="vertical-align:middle" onclick="mainS()">
+                <span>♚</span>
+            </div>
+        </div>
+        <?php include 'reader.php';?>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

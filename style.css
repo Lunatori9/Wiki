@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+body {
+    background-image: url('https://i.imgur.com/pqvHawy.gif');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+/*bottombar*/
+.bott {
+    background-color: rgba(0,0,0,0.6);
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+}
+
+.button {
+    display: inline;
+    border-radius: 4px;
+    background-color: rgba(100,125,150,0.5);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    float: right;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: right 0.4s, opacity 0.4s;
+    border-left: white;
+}
+
+#btn1.button span:after {
+    content: "Credit";
+}
+
+#btn2.button span:after {
+    content: "Music";
+}
+
+#btn3.button span:after {
+    content: "Art";
+}
+
+#btn4.button span:after {
+    content: "Language";
+}
+
+#btn5.button span:after {
+    content: "Story";
+}
+
+#btn6.button span:after {
+    content: "Main";
+}
+
+#btn1.button:hover span {
+    padding-right: 32px;
+}
+
+#btn2.button:hover span {
+    padding-right: 33px;
+}
+
+#btn3.button:hover span {
+    padding-right: 20px;
+}
+
+#btn4.button:hover span {
+    padding-right: 46px;
+}
+
+#btn5.button:hover span {
+    padding-right: 30px;
+}
+
+#btn6.button:hover span {
+    padding-right: 28px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*icon*/
+
+.icon {
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px;
+    padding-left: 9px;
+    padding-top: 9px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    background-color: rgba(233, 239, 250, 0.679);
+    border: 2px solid white;
+    
+}
+
+.icon p {
+    bottom: -10px;
+    display: block;
+    font-family: jura;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    margin-right: -2px;
+    position: absolute;
+}
+
+.icon:hover p {
+    color: rgb(95, 95, 95);
+    text-decoration: underline;
+    text-decoration-color: rgb(95, 95, 95);
+}
+
+#t1 {
+    color: white;
+    cursor: pointer; 
+    display: inline;
+    position: absolute;
+    left: 45vw;
+    font-family: Jura;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 5px white;
+    transition: text-shadow 0.9s, color 0.5s;
+}
+
+#t1:hover {
+    color: rgb(255, 189, 189);
+    text-shadow: 1px 1px 2px rgb(253, 195, 195);
+}
+
+/*Storage*/
+
+.picture {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: none;
+}
+
+.story {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: none;
+}
+
+#fileLogo {
+    width: 160px;
+    height: 160px;
+}
+
+#fileDead {
+    width: 432.5px;
+    height: 286px;
+}
+
+/*method*/
+#yameteIndrico {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+#fileCross {
+    background-image: url('images/Cross.png');
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    top: 5px;
+    z-index: -1;
+    display: none;
+    cursor: pointer;
+}
+
+#fileCross:hover {
+    background-image: url('images/CrossGlow.png');
+}
+
+/*Music Player*/
+#musicP {
+  position: absolute;
+  z-index: 9;
+  background-color: #00000059;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+.alignIn {
+    display: inline;
+    cursor: pointer;
+}
+#musicPheader {
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 5px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: rgb(250, 250, 250);
+}
+
+#playBut {
+    background-image: url('images/PlayButton.png');
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+#playBut:hover {
+    background-image: url('images/PlayButtonGlow.png');
+}
+
+#pauseBut {
+    background-image: url('images/PauseButton.png');
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+#pauseBut:hover {
+    background-image: url('images/PauseButtonGlow.png');
+}
+
+#closeBut {
+    background-image: url('images/Cross.png');
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+#closeBut:hover {
+    background-image: url('images/CrossGlow.png');
+}
+
+/*media query*/
+
+@media screen and (max-width: 800px) {
+    #t1 {
+        left: 10px;
+    }
+}
+
+/*Girl*/
+@media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 7/5) {
+    body {
+        background-image :url('https://i.pinimg.com/originals/67/81/ab/6781ab0558e13536dce572ff2c0e4b87.gif')
+    }
+    .icon p {
+        color: white;
+    }
+}
+
+/* Neko */
+@media screen and (max-aspect-ratio: 1/1) {
+    body {
+        background-image :url('https://i.pinimg.com/originals/55/6c/0a/556c0ae630b46f476da70f0f0284ba0f.gif')
+    }
+    .icon p {
+        color: white;
+    }
+}
