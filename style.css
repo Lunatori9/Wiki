@@ -214,19 +214,31 @@ body {
     background-image: url('images/CrossGlow.png');
 }
 
-/*Music Player*/
-#musicP {
-  position: absolute;
-  z-index: 9;
-  background-color: #00000059;
-  border: 1px solid #d3d3d3;
-  text-align: center;
+.recycle {
+    position: absolute;
+    display: incline-block;
+    bottom: 50px;
+    left: 10px;
+    font-weight: bold;
 }
 
+/*Music Player*/
 .alignIn {
-    display: inline;
     cursor: pointer;
+    display: inline;
 }
+
+#musicP {
+  position: absolute;
+  z-index: -1;
+  background-color: #3f3f3f59;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgba(92, 92, 92, 0.392);
+}
+
 #musicPheader {
     font-size: 8px;
     letter-spacing: 2px;
@@ -234,8 +246,14 @@ body {
     padding: 5px;
     cursor: move;
     z-index: 10;
-    background-color: #2196F3;
+    background-image: linear-gradient(rgb(255, 128, 255), rgba(255, 128, 255, 0.323));
     color: rgb(250, 250, 250);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#musicName {
+    background: white;
 }
 
 #playBut {
@@ -249,6 +267,10 @@ body {
     background-image: url('images/PlayButtonGlow.png');
 }
 
+#playBut:active {
+    background-image: url('images/PlayButtonActive.png');
+}
+
 #pauseBut {
     background-image: url('images/PauseButton.png');
     height: 50px;
@@ -260,6 +282,10 @@ body {
     background-image: url('images/PauseButtonGlow.png');
 }
 
+#pauseBut:active {
+    background-image: url('images/PauseButtonActive.png')
+}
+
 #closeBut {
     background-image: url('images/Cross.png');
     height: 50px;
@@ -269,6 +295,34 @@ body {
 
 #closeBut:hover {
     background-image: url('images/CrossGlow.png');
+}
+
+#closeBut:Active {
+    background-image: url('images/CrossActive.png');
+}
+
+/*styOpener*/
+.styContainer {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height:100%;
+    margin: auto;
+    display: none;
+    border: 1px border black;
+}
+.styBody {
+    positive: absolute;
+    left: 50%;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+}
+
+.styTitle {
+    position: absolute;
+    top: 0px;
+    display: block;
 }
 
 /*media query*/

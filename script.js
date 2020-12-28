@@ -1,5 +1,5 @@
 function showFile(x) {
-    var filex = x;
+  var filex = x;
     document.getElementById('yameteIndrico').style.backgroundColor = 'rgba(0,0,0,0.7)';
     document.getElementById('yameteIndrico').style.zIndex = '3';
     document.getElementById('fileCross').style.zIndex = '3';
@@ -10,15 +10,29 @@ function showFile(x) {
         document.getElementById('yameteIndrico').style.backgroundColor = 'rgba(0,0,0,0)';
         document.getElementById('yameteIndrico').style.zIndex = '-1';
         document.getElementById('fileCross').style.zIndex = '-1';
-        document.getElementById(filex).style.display = 'none';
         document.getElementById('fileCross').style.display = 'none';
+        document.getElementById(filex).style.display = 'none';
     };
 }
 
 function play(x) {
+    document.getElementById('musicName').innerHTML = x.slice(6);
+    ;
     document.getElementById('audio').setAttribute("src", x)
     var audio = document.getElementById("audio");
-    audio.play();
+    document.getElementById('musicP').style.display = 'block';
+
+    document.getElementById('playBut').onclick = function playM(x){
+      audio.play();
+    }
+    document.getElementById('pauseBut').onclick = function pauseM(x){
+      audio.pause();
+    }
+    document.getElementById('closeBut').onclick = function stopM(x){
+      document.getElementById('musicP').style.display = 'none';
+      audio.pause();
+      audio.currentTime= 0;
+    }
 }
 
 dragElement(document.getElementById("musicP"));

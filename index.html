@@ -26,6 +26,10 @@
                     <img src="images/jpg file.png" alt="logo">
                     <p>logo</p>
                 </th>
+                <th class="icon" onclick="play('music/イワシがつちから.mp3')">
+                    <img src="images/mp3 file.png" alt="イワシがつちから">
+                    <p>イワシがつ</p>
+                </th>
                 <th class="icon" id="deadId" onclick="showFile('fileDead')">
                     <img src="images/jpg file.png" alt="Dead">
                     <p>Dead</p>
@@ -35,15 +39,19 @@
                     <p>EPro</p>
                 </th>
                 <th class="icon" onclick="play('music/tune and melody.mp3')">
-                    <img src="images/mp3 file.png" alt="Ronim Jam">
+                    <img src="images/mp3 file.png" alt="Tune&Melody">
                     <p>Tune&Melody</p>
                 </th>
             <tr>
         </table>
+        <div class="icon recycle" onclick="alert('This folder is empty!')">
+            <img src="images/recycle.png" alt="recycle">
+            <p>Recycle Bin</p>
+        </div>
         <!--Music Player-->
         <div id="musicP">
-            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
             <div id="musicPheader">LUNAPLAYER</div>
+            <div id="musicName"></div>
             <div class="alignIn">
                 <div id="playBut"></div>
             </div>
@@ -54,6 +62,12 @@
                 <div id="closeBut"></div>
             </div>
         </div>
+        <!--\\\styOpener
+            <div class="styContainer">
+                <img src="" alt="">
+                <p id="styTitle"></p>
+                <p id="styContent"></p>
+            </div>-->
         <!--Bottombar-->
         <div class="bott">
             <p id="t1" title="Owner of the desktop">Lunatori Desktop</p>
