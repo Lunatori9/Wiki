@@ -351,4 +351,7 @@ body {
     .icon p {
         color: white;
     }
+    #t1 {
+        letter-spacing: 0px;
+    }
 }
